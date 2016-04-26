@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E89740E01CCF743B001779EF /* TestFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E89740DF1CCF743B001779EF /* TestFramework.framework */; };
-		E89740E11CCF743B001779EF /* TestFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E89740DF1CCF743B001779EF /* TestFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E89740E31CCF7E9B001779EF /* TestFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E89740E21CCF7E9B001779EF /* TestFramework.framework */; };
+		E89740E41CCF7E9B001779EF /* TestFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E89740E21CCF7E9B001779EF /* TestFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E8B58CC31CCA146D001B8E13 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B58CC21CCA146D001B8E13 /* main.m */; };
 		E8B58CC61CCA146D001B8E13 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B58CC51CCA146D001B8E13 /* AppDelegate.m */; };
 		E8B58CC91CCA146D001B8E13 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B58CC81CCA146D001B8E13 /* ViewController.m */; };
@@ -24,7 +24,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				E89740E11CCF743B001779EF /* TestFramework.framework in Embed Frameworks */,
+				E89740E41CCF7E9B001779EF /* TestFramework.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -32,7 +32,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		E89740DF1CCF743B001779EF /* TestFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TestFramework.framework; path = "frameworks/Output/TestFramework-Debug-iphoneuniversal/TestFramework.framework"; sourceTree = "<group>"; };
+		E89740E21CCF7E9B001779EF /* TestFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TestFramework.framework; path = "frameworks/TestFramework/Output/TestFramework-Debug-iphoneuniversal/TestFramework.framework"; sourceTree = "<group>"; };
 		E8B58CBE1CCA146D001B8E13 /* TestUsingFrameworks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestUsingFrameworks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8B58CC21CCA146D001B8E13 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E8B58CC41CCA146D001B8E13 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -50,7 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E89740E01CCF743B001779EF /* TestFramework.framework in Frameworks */,
+				E89740E31CCF7E9B001779EF /* TestFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,7 +60,7 @@
 		E8B58CB51CCA146D001B8E13 = {
 			isa = PBXGroup;
 			children = (
-				E89740DF1CCF743B001779EF /* TestFramework.framework */,
+				E89740E21CCF7E9B001779EF /* TestFramework.framework */,
 				E8B58CC01CCA146D001B8E13 /* TestUsingFrameworks */,
 				E8B58CBF1CCA146D001B8E13 /* Products */,
 			);
@@ -290,6 +290,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/frameworks/Output/TestFramework-Debug-iphoneuniversal",
+					"$(PROJECT_DIR)/frameworks/TestFramework/Output/TestFramework-Debug-iphoneuniversal",
 				);
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = TestUsingFrameworks/Info.plist;
@@ -310,6 +311,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/frameworks/Output/TestFramework-Debug-iphoneuniversal",
+					"$(PROJECT_DIR)/frameworks/TestFramework/Output/TestFramework-Debug-iphoneuniversal",
 				);
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = TestUsingFrameworks/Info.plist;
