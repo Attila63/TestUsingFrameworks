@@ -19,7 +19,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    [[[HalloWorld alloc] init] foo];
+    HalloWorld *hw = [[HalloWorld alloc] init];
+    [hw foo];
+    [hw foo2];
+    
     return YES;
 }
 
