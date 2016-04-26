@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 
+#import <TestFramework/TestFramework.h>
+
 @interface AppDelegate ()
 
 @end
@@ -16,7 +18,8 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    [[[HalloWorld alloc] init] foo];
     return YES;
 }
 
